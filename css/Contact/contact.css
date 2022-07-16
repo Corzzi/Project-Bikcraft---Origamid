@@ -1,0 +1,165 @@
+.contact-bg {
+  box-shadow: inset 0 -260px #e5e5e5;
+  background-color: var(--cor-11);
+}
+
+.contact-bg > div {
+  grid-template-columns: minmax(250px, 460px) auto;
+}
+
+.contact-info {
+  background-color: var(--cor-12);
+  border-radius: 5px 0 0 5px;
+  padding: 60px 60px 80px 60px;
+}
+
+.contact-info h2 {
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.contact-info li {
+  grid-template-columns: auto 1fr;
+  margin-bottom: 32px;
+}
+
+.contact-info ul li:nth-child(3) {
+  margin-bottom: 60px;
+}
+
+.contact-info li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.contact-info li p {
+  grid-column: 2 / 3;
+}
+
+.contact-info a {
+  margin-left: 30px;
+}
+
+.form {
+  background-color: var(--cor-0);
+  border-radius: 0 5px 5px 0;
+  padding: 60px;
+}
+
+.form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form label,
+.form input {
+  display: block;
+}
+
+.form input,
+.form textarea {
+  background-color: var(--cor-1);
+  border: 0;
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form textarea {
+  height: 160px;
+}
+
+.form .duo {
+  border: 0;
+  gap: 20px;
+}
+
+.form .duo div {
+  width: 100%;
+}
+
+.maps-bg {
+  background-color: #e5e5e5;
+  padding: 80px 0;
+}
+
+.maps-bg .container {
+  margin-bottom: 60px;
+}
+
+.maps-area {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.map-info {
+  background-color: var(--cor-0);
+  padding: 32px;
+}
+
+.map-title h3 {
+  align-items: center;
+  gap: 10px;
+}
+
+.map-title h3::before {
+  content: "";
+  display: inline-block;
+  margin-left: 3px;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p-1);
+}
+
+.map-desc {
+  padding-left: 28px;
+  margin: 32px 0;
+}
+
+.map-desc ul {
+  gap: 60px;
+}
+
+.map-desc li {
+  border-left: 2px solid var(--cor-2);
+}
+
+.map-desc li p {
+  margin-left: 10px;
+}
+
+.map-hours {
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 800px) {
+  .contact-bg {
+    box-shadow: inset 0 0;
+  }
+  .contact-bg > div {
+    grid-template-columns: auto;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  .form {
+    border-radius: 5px;
+  }
+
+  .form .duo {
+    display: block;
+  }
+
+  .maps-bg {
+    padding: 20px 0;
+  }
+
+  .maps-area {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

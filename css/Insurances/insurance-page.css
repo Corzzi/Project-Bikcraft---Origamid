@@ -1,0 +1,106 @@
+.vantages {
+  background-color: var(--cor-12);
+}
+
+#insurances .insurances-bg {
+  background-color: var(--cor-11);
+  max-height: 500px;
+}
+
+.vantages-title,
+.faq-title {
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.vantages-area {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-bottom: 80px;
+}
+
+.vantage img,
+.vantage h3 {
+  margin-bottom: 10px;
+}
+
+.vantage h3 {
+  font-weight: 600;
+}
+
+.vantage p {
+  font-weight: 400;
+}
+
+.questions {
+  padding-bottom: 80px;
+}
+
+.questions dl > div {
+  padding: 20px;
+}
+
+.questions dl > div:nth-child(odd) {
+  background-color: var(--cor-1);
+}
+
+.questions button::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p-1);
+}
+
+.questions button::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url("../../img/icones/seta-abrir.svg");
+}
+
+.questions button[aria-expanded="true"]::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url("../../img/icones/seta-abrir.svg");
+  transform: rotate(180deg);
+}
+
+.questions button {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: none;
+}
+
+.js .questions dd {
+  display: none;
+}
+
+.js .questions dd.active-question {
+  display: block;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  #insurances .insurances-bg {
+    background-color: var(--cor-11);
+    max-height: 100%;
+  }
+
+  .vantages-area {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .vantages-area {
+    grid-template-columns: 1fr;
+  }
+}

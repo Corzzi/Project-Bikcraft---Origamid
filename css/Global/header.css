@@ -1,0 +1,111 @@
+.header-bg,
+.introducao-bg {
+  background-color: var(--cor-12);
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu {
+  gap: 30px;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  color: var(--cor-0);
+  padding: 16px 0px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  display: block;
+
+  height: 2px;
+  width: 0px;
+  margin-top: 4px;
+
+  background: var(--cor-0);
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu .active::after {
+  width: 100%;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.navbar {
+  height: 2px;
+  width: 35px;
+  background-color: var(--cor-0);
+}
+
+@media (max-width: 800px) {
+  .menu-mobile {
+    display: flex !important;
+  }
+
+  .menu {
+    position: absolute !important;
+    display: block !important;
+    z-index: 999 !important;
+
+    width: 100% !important;
+    top: 72px !important;
+    height: 0 !important;
+    right: 0 !important;
+
+    background-color: var(--cor-12);
+    visibility: hidden !important;
+  }
+
+  .menu a {
+    padding: 20px !important;
+  }
+
+  .menu a:hover {
+    background-color: var(--cor-10);
+  }
+
+  .menu a::after {
+    display: none;
+  }
+
+  nav.active .menu {
+    height: 29% !important;
+    visibility: visible !important;
+  }
+
+  nav.active .navbar:nth-child(1) {
+    display: none;
+    transition: 0.4s;
+  }
+
+  nav.active .navbar:nth-child(2) {
+    position: relative;
+    transform: rotate(135deg) !important;
+    transition: 0.4s;
+  }
+
+  nav.active .navbar:nth-child(3) {
+    position: relative;
+    transform: rotate(-135deg) !important;
+    top: -11.5px !important;
+    transition: 0.4s;
+  }
+}

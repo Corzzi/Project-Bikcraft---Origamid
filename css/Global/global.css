@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+img[src$=".jpg"] {
+  border-radius: 5px;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title-bg {
+  background-color: var(--cor-11);
+  padding: 60px 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+/* Anime JS */
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}

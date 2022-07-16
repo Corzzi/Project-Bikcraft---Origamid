@@ -1,0 +1,94 @@
+.insurances-bg {
+  background-color: var(--cor-11);
+  max-height: 730px;
+}
+
+.insurances-bg h2 {
+  padding-top: 60px;
+  margin-bottom: 100px;
+}
+
+.insurances {
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.insurance {
+  background-color: var(--cor-12);
+  padding: 32px 32px 32px 64px;
+  height: 400px;
+}
+
+.insurance:nth-child(1):hover {
+  font-size: 15px;
+  margin: -10px;
+  height: 420px;
+  transition: 0.4s;
+}
+
+.insurance:nth-child(2):hover {
+  margin: -15px;
+  height: 440px;
+  transition: 0.4s;
+}
+
+.insurance-title {
+  justify-content: space-between;
+}
+
+.monthly1 {
+  margin-left: 53px;
+}
+
+.monthly2 {
+  margin-left: 60px;
+}
+
+.insurance ul {
+  place-self: center start;
+}
+
+.insurance li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.insurance li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  margin-right: 5px;
+  background: url("../../img/icones/lista.svg");
+}
+
+.insurance a {
+  place-self: end start;
+}
+
+.silver {
+  background: var(--cor-10) !important;
+}
+
+.gold {
+  color: var(--p-5);
+}
+
+@media (max-width: 800px) {
+  .insurances-bg {
+    max-height: 100%;
+  }
+  .insurances {
+    grid-template-columns: 1fr;
+  }
+
+  .monthly1 {
+    margin-left: 30px;
+  }
+
+  .monthly2 {
+    margin-left: 34px;
+  }
+}

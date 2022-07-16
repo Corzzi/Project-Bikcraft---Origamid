@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap");
+
+/* Global */
+
+@import "./Global/global.css";
+@import "./Global/header.css";
+@import "./Global/footer.css";
+
+/* Home */
+
+@import "./Home/intro.css";
+@import "./Home/techs.css";
+@import "./Home/partners.css";
+@import "./Home/deppoiments.css";
+@import "./Home/insurances.css";
+
+/* Utilitys */
+
+@import "./Utility/utility.css";
+@import "./Utility/fonts.css";
+@import "./Utility/colors.css";
+
+/* Bikes */
+
+@import "./Bikes/bikes-lists.css";
+@import "./Bikes/bikes.css";
+@import "./Bikes/nimbus-nebula-cosmic.css";
+
+/* Terms and Condits */
+
+@import "./Terms/terms.css";
+
+/* Insurances page */
+
+@import "./Insurances/insurance-page.css";
+
+/* Contact page */
+
+@import "./Contact/contact.css";
+
+/* Budget page */
+
+@import "./Budget/budget.css";
